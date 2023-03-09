@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-principal: #8E9AAF;
+  --bg-secundario: #CBC0D3;
+
+  --ff-principal: 'Roboto', sans-serif;
+  --ff-secundaria: 'Staatliches', cursive;
+
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  display: grid;
+  grid-template-areas:
+   "aside main main"
+   "aside footer footer";
+}
+
+aside {
+  grid-area: aside;
+  height: 100vh;
+
+  color: #ffffff;
+
+  max-width: 38rem;
+  text-align: center;
+
+  background-color: var(--bg-principal);
+}
+
+aside img {
+  margin: 3.2rem 0;
+}
+
+aside h1 {
+  background: var(--bg-secundario);
+  width: 100%;
+  margin-bottom: 5rem;
+
+  font-size: 4.8rem;
+  font-weight: 400;
+  font-family: var(--ff-secundaria);
+  padding: 2rem;
+}
+
+aside p {
+  width: 27.5rem;
+  font-family: var(--ff-principal);
+
+  margin: 0 auto;
+
+}
+
+main {
+  grid-area: main;
+
+  display: grid;
+  grid-template-areas: 
+  "A B C"
+  "D B E"
+  "D F E";
+  gap: 3.2rem;
+
+  padding: 5rem 6.5rem;
+
+  max-width: 90rem;
+}
+
+main img {
+  width: 100%;
+}
+
+main div:nth-child(1) {
+  grid-area: A;
+}
+
+main div:nth-child(2) {
+  grid-area: D;
+}
+
+main div:nth-child(3) {
+  grid-area: B;
+}
+
+main div:nth-child(4) {
+  grid-area: F;
+}
+
+main div:nth-child(5) {
+  grid-area: C;
+}
+
+main div:nth-child(6) {
+  grid-area: E;
+}
+
+footer {
+  grid-area: footer;
+
+  max-width: 598px;
+  margin: 0 auto;
+}
+
