@@ -5,11 +5,11 @@
 }
 
 :root {
-  --bg-principal: #8E9AAF;
-  --bg-secundario: #CBC0D3;
+  --bg-primary: #8E9AAF;
+  --bg-secondary: #CBC0D3;
 
-  --ff-principal: 'Roboto', sans-serif;
-  --ff-secundaria: 'Staatliches', cursive;
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Staatliches', cursive;
 
   font-size: 62.5%;
 }
@@ -31,7 +31,7 @@ aside {
   max-width: 38rem;
   text-align: center;
 
-  background-color: var(--bg-principal);
+  background-color: var(--bg-primary);
 }
 
 aside img {
@@ -39,19 +39,19 @@ aside img {
 }
 
 aside h1 {
-  background: var(--bg-secundario);
+  background: var(--bg-secondary);
   width: 100%;
   margin-bottom: 5rem;
 
   font-size: 4.8rem;
   font-weight: 400;
-  font-family: var(--ff-secundaria);
+  font-family: var(--ff-secondary);
   padding: 2rem;
 }
 
 aside p {
   width: 27.5rem;
-  font-family: var(--ff-principal);
+  font-family: var(--ff-primary);
 
   margin: 0 auto;
 
